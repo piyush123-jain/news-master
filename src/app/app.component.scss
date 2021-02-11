@@ -1,0 +1,47 @@
+
+.my-custom-menu {
+  --width: 500px;
+}
+
+ion-toggle {
+  left:150px;
+  top:unset;
+--background: rgb(27, 26, 26);
+--background-checked: rgb(168, 162, 162);
+
+--handle-background: rgb(97, 93, 93);
+--handle-background-checked: rgb(97, 91, 91);
+}
+ion-toggle.toggle-checked 
+{
+--handle-box-shadow: 4px 0 2px 0 rgb(27, 26, 26);
+}
+.white
+{
+ --background:white;
+}
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
+
+// md in-toolbar in-segment segment-button-has-label segment-button-has-label-only segment-button-layout-icon-top ion-activatable ion-activatable-instant ion-focusable  segment-button-checked
+
+.hydrated
+{
+  color:rgb(168, 162, 162);
+  border-width:0px;
+}
+.in-segment
+{
+  
+  --indicator-color-checked: none;   
+}
+.black
+{
+
+  --background: rgb(27, 26, 26);
+  
+}
+
+

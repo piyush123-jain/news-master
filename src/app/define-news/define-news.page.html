@@ -1,0 +1,150 @@
+
+<br><br>
+<ion-content>
+
+
+
+  <div *ngIf="!data">
+
+    <div *ngFor="let t_h of categoryData; let i = index"  >
+      <div *ngIf="i<1">
+        
+        <ion-card-header>
+          <h3>
+  
+            <br>  <br>
+        <ion-card-title >{{t_h.title}}</ion-card-title>
+      </h3>
+    
+    <br>
+    <ion-img [src]="t_h.urlToImage"></ion-img>
+  </ion-card-header>
+  
+  <ion-card-content >
+    {{t_h.description}}
+  </ion-card-content>
+        
+      </div>
+    </div>
+    
+    
+    <div *ngFor="let let t_h of categoryData of let t_h of categoryData; let i = index " >
+
+        
+        
+        <ion-item (click)="showNews(t_h)"  [class]="className" >
+          <ion-thumbnail slot="end">
+            <img [src]="t_h.urlToImage">
+          </ion-thumbnail>
+          <ion-label class="ion-label">{{t_h.title}}</ion-label>
+        </ion-item>
+        
+      </div>
+    </div>
+    
+
+
+
+
+  <!-- Skeleton screen -->
+  
+  <div *ngIf="data" class="ion-padding custom-skeleton">
+    <div>
+      <!-- use ion-thumbnail for box of skelaton  -->
+      <ion-thumbnail slot="start">
+        <ion-skeleton-text style="width:20em;height:5em;" animated></ion-skeleton-text>
+    </ion-thumbnail>
+    <br><br>
+    <ion-label>
+    <h3>
+      <ion-skeleton-text animated style="width: 50%"></ion-skeleton-text>
+    </h3>
+    <p>
+      <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+    </p>
+    <p>
+      <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+    </p>
+  </ion-label>
+</div>
+  <ion-item>
+
+    <!-- use avatar for circle image   -->
+    <ion-avatar slot="start">
+  <ion-skeleton-text animated></ion-skeleton-text>
+    </ion-avatar>
+    <ion-label>
+      <h3>
+        <ion-skeleton-text animated style="width: 50%"></ion-skeleton-text>
+      </h3>
+      <p>
+        <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+      </p>
+      <p>
+        <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+      </p>
+    </ion-label>
+  
+  </ion-item>
+  <ion-item>
+
+    <!-- use avatar for circle image   -->
+    <ion-avatar slot="start">
+  <ion-skeleton-text animated></ion-skeleton-text>
+    </ion-avatar>
+    <ion-label>
+      <h3>
+        <ion-skeleton-text animated style="width: 50%"></ion-skeleton-text>
+      </h3>
+      <p>
+        <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+      </p>
+      <p>
+        <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+      </p>
+    </ion-label>
+  
+  </ion-item>
+   <ion-item>
+
+    <!-- use avatar for circle image   -->
+    <ion-avatar slot="start">
+  <ion-skeleton-text animated></ion-skeleton-text>
+    </ion-avatar>
+    <ion-label>
+      <h3>
+        <ion-skeleton-text animated style="width: 50%"></ion-skeleton-text>
+      </h3>
+      <p>
+        <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+      </p>
+      <p>
+        <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+      </p>
+    </ion-label>
+  
+  </ion-item>
+  <ion-item>
+
+    <!-- use avatar for circle image   -->
+    <ion-avatar slot="start">
+  <ion-skeleton-text animated></ion-skeleton-text>
+    </ion-avatar>
+    <ion-label>
+      <h3>
+        <ion-skeleton-text animated style="width: 50%"></ion-skeleton-text>
+      </h3>
+      <p>
+        <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+      </p>
+      <p>
+        <ion-skeleton-text animated style="width: 60%"></ion-skeleton-text>
+      </p>
+    </ion-label>
+  
+  </ion-item>
+
+  </div>
+
+  
+</ion-content>

@@ -1,0 +1,27 @@
+<br><br><br><br><br><br>
+
+<ion-content>
+
+  <div *ngFor="let t_h of arrData;">
+    <div>
+      
+      <ion-card-header>
+        <h3>
+      <br>  <br>
+      <ion-card-title >{{t_h.title}}</ion-card-title>
+    </h3>
+  
+  <br>
+  <ion-img [src]="t_h.urlToImage"></ion-img>
+</ion-card-header>
+
+<ion-card-content>
+</ion-card-content>
+      {{t_h.description}}
+    </div>
+  </div>
+<div *ngIf="show">
+  <button [routerLink]="['/home']" routerLinkActive="router-link-active"> click here </button>
+</div>
+
+</ion-content>

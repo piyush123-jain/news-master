@@ -1,0 +1,14 @@
+.ion-label
+{
+    font-size:12px;
+    text-align: justify;
+    text-overflow: inherit;
+    white-space: pre-wrap;
+}
+ion-segment-button {
+    --indicator-color: none !important;
+    --indicator-color-checked: none !important;
+    // border:none;
+    // --indicator-color: 
+    // var(--ion-toolbar-segment-color-checked, var(--color-checked));
+  }
